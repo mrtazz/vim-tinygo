@@ -35,6 +35,3 @@ function! tinygo#GoFormat()
     endif
     call winrestview(view)
 endfunction
-command! Fmt call tinygo#GoFormat()
-
-autocmd FileType go autocmd BufWritePre <buffer> Fmt
